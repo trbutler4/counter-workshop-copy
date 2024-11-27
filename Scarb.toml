@@ -1,0 +1,16 @@
+# Scarb.toml
+
+[package]
+name = "workshop"
+version = "0.1.0"
+edition = "2023_11"
+
+[dependencies]
+openzeppelin_access = "0.19.0"
+starknet = "2.8.5"
+
+[dev-dependencies]
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry.git", tag = "v0.33.0" }
+
+[[target.starknet-contract]]
+casm = true
